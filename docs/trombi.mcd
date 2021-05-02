@@ -1,0 +1,3 @@
+PROMO:nom, github
+POSSEDE/APPARTIENT, 0N PROMO, 11 ETUDIANT
+ETUDIANT: nom, _prenom, pseudo_github, profil_picture

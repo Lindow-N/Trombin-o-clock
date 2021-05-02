@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h1>Liste des promos</h1>
+<ul class="cards">
+    
+     <!--<li class="card card--label"><a href="promo.html">Promo 1</a></li>-->
+    <%# Affiche la liste de chaque promotions%>
+     <% for(const promo of promos) { %>
+    <li class="card card--label"><a href="promo/<%=promo.id%>"><%=promo.name%></a></li>
+    <% } %>
+       
+    
+</ul>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,11 @@
+PROMO
+id integer
+name text
+github_organization text
+
+STUDENT
+id integer
+first_name text
+last_name text
+github_username text
+promo_id integer PROMO(id)

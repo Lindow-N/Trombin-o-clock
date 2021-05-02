@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<h1>Ajouter un étudiant</h1>
+<form method="POST">
+    <p>
+        <label>Promotion</label>
+        <select name="promo" id="promo" required>
+            <option value="0">Choisir une promo</option>
+            <%# On affiche toutes les promos dans le select et on oublie pas de mettre leur id dans l'attribut option%>
+            <% for(const promo of promos) { %>
+            <option value="<%=promo.id%>"><%=promo.name%></option>
+            <% } %>
+          </select>
+    </p>
+    <p>
+        <label>Prénom</label>
+        <input type="text" name="first_name" placeholder="Prénom" required>
+    </p>
+    <p>
+        <label>Nom</label>
+        <input type="text" name="last_name" placeholder="Nom" required>
+    </p>
+    <p>
+        <label>Pseudo Github</label>
+        <input type="text" name="github_username" placeholder="PrenomNom" required>
+    </p>
+    <p>
+        <button>Valider</button>
+    </p>
+</form>
+<%- include('../partials/footer') %>
